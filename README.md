@@ -24,7 +24,7 @@ A modern and user-friendly frontend for a real estate website designed to showca
 
 To run the project locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/real-estate-frontend.git`
+1. Clone this repository: `git clone https://github.com/apoorvarajlondhe/elite_real_state.git` 
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 4. Access the website locally at `http://localhost:3000` in your browser.
