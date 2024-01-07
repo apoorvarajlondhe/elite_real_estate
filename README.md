@@ -2,7 +2,7 @@
 
 # Welcome to Elite Real Estate  
 
-![Real Estate Website](link-to-your-image)
+//![Real Estate Website](link-to-your-image)
 
 A modern and user-friendly frontend for a real estate website designed to showcase properties, streamline property searches, and provide a seamless user experience.
 
