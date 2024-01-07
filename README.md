@@ -3,7 +3,7 @@
 # Welcome to Elite Real Estate  
 
 
-[Visit Elite Real Estate](https://elite-real-estate.pages.dev)
+[Visit Elite Real Estate here](https://elite-real-estate.pages.dev)
 
 
 A modern and user-friendly frontend for a real estate website designed to showcase properties, streamline property searches, and provide a seamless user experience.
