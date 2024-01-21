@@ -1,29 +1,21 @@
-import Header from "./components/Header/Header.jsx";
-import Hero from "./components/Hero/Hero.jsx";
+import { Suspense } from "react";
 import "./App.css";
-import Companies from "./components/Companies/Companies.jsx";
-import Residencies from "./components/Residencies/Residencies.jsx";
-import Value from "./components/Value/Value.jsx";
-import Contact from "./components/Contact/Contact.jsx";
-import GetStarted from "./components/GetStarted/GetStarted.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Layout from "./components/Layout/Layout.jsx";
+
+import Website from "./pages/Website.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <div className="white-gradient" />
-        <Header />
-        <Hero />
-      </div>
-
-      <Companies />
-      <Residencies />
-      <Value />
-      <Contact />
-      <GetStarted />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Website />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 
