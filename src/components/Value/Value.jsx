@@ -52,17 +52,25 @@ const Value = () => {
                   <AccordionItemHeading>
                     <AccordionItemButton className=" flexCenter accordionButton">
                       <AccordionItemState>
-                        {({ expanded }) =>
+                        {/* {({ expanded }) =>
                           expanded
                             ? setClassName("expanded")
                             : setClassName("collapsed")
-                        }
+                        } */}
+
+                        {({ expanded }) => (
+                          <>
+                            <div className="flexCenter icon">{item.icon}</div>
+                            <span className="primaryText">{item.heading}</span>
+                            <div className="flexCenter icon">
+                              <MdOutlineArrowDropDown
+                                size={20}
+                                className={expanded ? "expanded" : "collapsed"}
+                              />
+                            </div>
+                          </>
+                        )}
                       </AccordionItemState>
-                      <div className="flexCenter icon">{item.icon}</div>
-                      <span className="primaryText">{item.heading}</span>
-                      <div className="flexCenter icon">
-                        <MdOutlineArrowDropDown size={20} />
-                      </div>
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
