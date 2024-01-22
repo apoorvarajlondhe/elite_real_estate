@@ -34,10 +34,11 @@ const Value = () => {
             We believe a good balance to live can make your life better
           </span>
 
+          {/* Drop down accordion */}
           <Accordion
             className="accordion"
             allowMultipleExpanded={false}
-            preExpanded={[0]}
+            // preExpanded={[0]}
           >
             {data.map((item, i) => {
               const [className, setClassName] = useState(null);
